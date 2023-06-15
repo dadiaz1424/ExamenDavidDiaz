@@ -9,5 +9,6 @@ import ec.edu.espe.arquitectura.examen.model.OfiSede;
 public interface OfiSedeRepository extends JpaRepository<OfiSede, String>  {
     
    
-    List<OfiSede> findByCodigoInstitucion(Integer codigoInstitucion);
+    List<OfiSede> findByCodigoInstitucion(String codigoInstitucion);
+    Boolean existsByEsPrincipal(Boolean esPrincipal);
 }
